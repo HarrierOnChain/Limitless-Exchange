@@ -40,6 +40,20 @@ These bots run on Limitless through a single venue adapter on the shared engine 
 
 ---
 
+## Quickstart
+
+Clone, drop in your keys, and run — the TUI lets you pick a strategy.
+
+```bash
+git clone https://github.com/HarrierOnChain/Limitless-Exchange.git
+cd Limitless-Exchange
+cp config.example.yaml config.yaml   # add your keys
+cargo run --release                  # launch the TUI
+# headless: cargo run --release -- run copy-trading
+```
+
+---
+
 ## One engine, every venue
 
 This repo is the **Limitless** entry point. The execution core, risk layer, and all 20+ venue adapters live in the main toolkit:
